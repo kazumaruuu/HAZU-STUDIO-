@@ -1,0 +1,60 @@
+@use "mixin" as m;
+
+// top-page
+
+.index {
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .fv-area {
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    width: 20%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      list-style: none;
+
+      a {
+        &:hover {
+          opacity: .6;
+          letter-spacing: 3px;
+          transition-duration: 0.5s;
+        }
+      }
+    }
+  }   
+
+
+  .mainvisual {
+    width: 70%;
+
+    img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .btn {
+    text-align: center;
+    margin-top: 50px;
+
+    &:hover {
+      opacity: .6;
+      letter-spacing: 3px;
+      transition-duration: 1s;
+    }
+  }
+}
+
+

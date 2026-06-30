@@ -1,0 +1,31 @@
+@use "mixin" as m;
+
+footer {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    border-top: 1px solid black;
+}
+
+.top {
+    border-top: none;
+    text-align: center;
+    display: block;
+}
+
+.footer-left {
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.footer-right {
+    p,a {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

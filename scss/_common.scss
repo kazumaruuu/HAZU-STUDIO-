@@ -1,0 +1,52 @@
+@use "mixin" as m;
+
+body {
+  color: #333;
+  background: #fff;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+p {
+    font-size: 12px;
+}
+
+.instalogo {
+    width: 30px;
+    height: 30px;
+}
+
+
+.next-page {
+    text-align: center;
+    margin: 160px 0;
+
+    a {
+        display: inline-block;
+        border-bottom: 1px solid #333;
+        padding-bottom: 5px;
+        transition: .3s;
+        &:hover {
+        opacity: .6;
+        letter-spacing: 3px;
+        transition-duration: 1s;
+        }
+    }
+}
+
+ .fadein {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 5s ease,
+        transform 5s ease;
+    }
+
+    .fadein.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
