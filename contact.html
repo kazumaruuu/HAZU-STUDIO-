@@ -40,17 +40,17 @@
 
         <h1>Contact</h1>
 
-        <div class="mainvisual contact">
-            <img src="img/メインビジュアル.webp" alt="メイン4">
+        <div class="mainvisual contact fadein">
+            <img src="img/innerbalcony-detail.webp" alt="メイン4">
         </div>
 
         <!-- 問い合わせフォーム埋め込み↓ -->
-         <div class="form">
+         <div class="form fadein">
             <h3>お問い合わせ</h3>
-            <iframe src="https://forms.gle/PTroMUpz4TufXafW6" frameborder="0"></iframe>
+            <iframe id="form" src="https://forms.gle/PTroMUpz4TufXafW6" frameborder="0"></iframe>
         </div>
 
-        <div class="wrapper">
+        <div class="wrapper fadein">
             <div class="text">
                 <h3>よくあるご質問</h3>
                 <p>スタジオをご利用いただくにあたって、これまでにお寄せいただいたご質問とその回答をご覧いただけます。</p>
@@ -66,7 +66,7 @@
             </div>
             <div class="faq">
                 <p>Q:キャンセル時の料金について教えてください。</p>
-                <p>A:<span>priceページのキャンセル料</span>をご確認ください。</p>
+                <p>A:<span><a href="#cancel">priceページのキャンセル料</a></span>をご確認ください。</p>
             </div>
             <div class="faq">
                 <p>Q:エレベーターはありますか？</p>
@@ -83,7 +83,7 @@
 
             <div class="text">
                 <h3>FAQに無いご質問</h3>
-                <p><span>お問い合わせフォーム</span>よりお問い合わせください。</p>
+                <p><span><a href="#form">お問い合わせフォーム</a></span>よりお問い合わせください。</p>
             </div>
         </div>
 
@@ -108,7 +108,7 @@
 
     </footer>
 
-
+<script src="js/main.js"></script>
 </body>
 
 </html>
