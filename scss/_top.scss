@@ -6,15 +6,28 @@
   h1 {
     text-align: center;
     margin: 20px 0;
+
+    @include m.sp {
+      font-size: 24px;
+    }
   }
 
   .fv-area {
     display: flex;
     align-items: center;
+
+    @include m.sp {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   header {
     width: 20%;
+
+    @include m.sp {
+      margin-top: 20px;
+    }
 
     ul {
       display: flex;
@@ -42,12 +55,20 @@
       height: 700px;
       object-fit: cover;
       display: block;
+
+      @include m.sp {
+        height: 200px;
+      }
     }
   }
 
   .btn {
     text-align: center;
     margin-top: 50px;
+
+    @include m.sp {
+      margin-top: 20px;
+    }
 
     &:hover {
       opacity: .6;

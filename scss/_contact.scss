@@ -21,6 +21,10 @@
         transform: translateY(-50%) rotate(-90deg);
         letter-spacing: 0.1em;
         color: rgb(51, 51, 51);
+
+        @include m.sp {
+            display: none;
+        }
     }
 
     .contact {
@@ -31,6 +35,10 @@
             height: 600px;
             object-fit: cover;
             display: block;
+
+            @include m.sp {
+                height: 300px;
+            }
         }
     }
 

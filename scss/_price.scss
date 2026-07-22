@@ -19,6 +19,10 @@
         transform: translateY(-50%) rotate(-90deg);
         letter-spacing: 0.1em;
         color: rgb(51, 51, 51);
+
+        @include m.sp {
+            display: none;
+        }
     }
 
     section {
@@ -28,17 +32,28 @@
     .price {
 
         .info-price {
+            background-color: #efeded;
             max-width: 900px;
-            height: 600px;
+            // height: 600px;
             margin: 0 auto;
             margin-top: 100px;
+            padding: 10px;
             display: flex;
             gap: 20px;
+
+            @include m.sp {
+                flex-direction: column;
+                height: 100%;
+            }
 
             .info-left {
                 width: 45%;
                 display: flex;
                 flex-direction: column;
+
+                @include m.sp {
+                    width: 95%;
+                }
 
                 h2 {
                 font-size: 1rem;
@@ -57,7 +72,7 @@
 
                     dt {
                         padding: 5px;
-                        border: 1px solid #ddd;
+                        border: 1px solid #575757;
                     }
 
                     dd {
@@ -70,6 +85,7 @@
                         margin-bottom: 10px;
                         font-size: 12px;
                         text-decoration: none;
+                        list-style-position: inside;
                     }
                 }
             }
@@ -81,9 +97,14 @@
                 gap: 10px;
                 margin-bottom: 40px;
 
+                @include m.sp {
+                    width: 95%;
+                }
+
                 .card {
                     border: 1px solid #ddd;
                     padding: 5px 0 5px 20px;
+                    background-color: white;
 
                     .plan {
                         margin-bottom: 20px;
@@ -107,6 +128,12 @@
         max-width: 900px;
         height: 300px;
         margin: 0 auto;
+        margin-top: 150px;
+
+        @include m.sp {
+            // margin-top: 50px;
+            height: 100%;
+        }
         
         h2 {
             padding-bottom: 15px;
@@ -117,14 +144,25 @@
             border-collapse: collapse;
             margin-bottom: 40px;
 
+            @include m.sp {
+                margin-bottom: 10px;
+            }
+
             th,td {
                 padding: 20px;
                 border: 1px solid #ddd;
                 text-align: center;
+
+                @include m.sp {
+                    padding: 5px;
+                    font-size: 12px;
+                }
             }
         }
+
         li {
             font-size: 12px;
+            list-style-position: inside;
         }
     }
 
@@ -132,10 +170,12 @@
         max-width: 900px;
         height: 150px;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 150px;
+
         
         li {
             font-size: 12px;
+            list-style-position: inside;
         }
     }
 }

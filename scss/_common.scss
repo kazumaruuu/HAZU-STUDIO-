@@ -26,6 +26,10 @@ p {
     text-align: center;
     margin: 160px 0;
 
+    // @include m.sp {
+    //     margin: 80px;
+    // }
+
     a {
         display: inline-block;
         border-bottom: 1px solid #333;

@@ -19,12 +19,20 @@
         transform: translateY(-50%) rotate(-90deg);
         letter-spacing: 0.1em;
         color: rgb(51, 51, 51);
+
+        @include m.sp {
+            display: none;
+        }
     }
 
     // 共通
 
     .guide-section {
         margin-bottom: 180px;
+
+        @include m.sp {
+            margin-bottom: 50px;
+        }
 
         h2 {
             font-size: 1rem;
@@ -50,12 +58,24 @@
             object-fit: cover;
             display: block;
             margin-top: 100px;
+
+            @include m.sp {
+                height: 200px;
+            }
         }
 
         .inner {
             width: 100%;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 50px;  
+            
+            .sp-br {
+                display: none;
+
+                @include m.sp {     
+                    display: block;
+                }
+            }
         }
     }
 
@@ -65,6 +85,14 @@
         p {
             max-width: 700px;
             margin: 0 auto 40px;
+
+            .sp-br {
+                display: none;
+
+                @include m.sp {
+                    display: block;
+                }
+            }
         }
 
         img {
@@ -85,22 +113,29 @@
 
         li {
             a {
-            border-bottom: 1px solid #333;
-            padding-bottom: 4px;
+                border-bottom: 1px solid #333;
+                padding-bottom: 4px;
+                transition: .3s;
 
-            transition: .3s;
+                @include m.sp {
+                    font-size: 12px;
+                }
 
-            &:hover {
-                opacity: .6;
+                &:hover {
+                    opacity: .6;
+                }
             }
-            }
-    }
+        }
     }
 
     .detail-gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+
+        @include m.sp {
+            gap: 10px;
+        }
 
         img {
             width: 100%;
